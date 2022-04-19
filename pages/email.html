@@ -1,0 +1,9 @@
+<?php 
+$destino= "g075@vds.edu.gt";
+$nombre= $_post["text"];
+$email= $_post["email"];
+$telefono= $_post["telefono"];
+$asunto= $_post["asunto"];
+$mensaje= $_post["mensaje"];
+$contenido= "nombre: " . $nombre . "/nEmail: " . $email . "/nTelefono: " . $telefono . "/nAsunto: " . $asunto . "/nMensaje: " . $mensaje;
+mail($destino,"asunto", $contenido);
